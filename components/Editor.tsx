@@ -32,23 +32,8 @@ export default function Editor({ data, setData }: EditorProps) {
   const handleGeneratePDF = async () => {
     setIsGenerating(true)
     try {
-      const response = await fetch('/api/generate-pdf', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(data),
-      })
-
-      if (!response.ok) throw new Error('Falha ao gerar PDF')
-
-      const blob = await response.blob()
-      const url = window.URL.createObjectURL(blob)
-      const a = document.createElement('a')
-      a.href = url
-      a.download = `Media-Kit-${data.name.replace(/\s+/g, '-')}.pdf`
-      document.body.appendChild(a)
-      a.click()
-      window.URL.revokeObjectURL(url)
-      document.body.removeChild(a)
+      const { generatePDFBrowser } = await import('@/lib/pdfGenerator')
+      await generatePDFBrowser(data)
     } catch (error) {
       console.error('Erro:', error)
       alert('Erro ao gerar PDF. Tente novamente.')
