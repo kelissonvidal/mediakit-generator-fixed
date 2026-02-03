@@ -2,7 +2,7 @@
 
 Aplicação web completa para geração de Media Kits profissionais em PDF.
 
-## 🚀 Instalação - PASSO A PASSO
+## 🚀 Instaalação - PASSO A PASSO
 
 ### 1. Instalar Dependências
 
