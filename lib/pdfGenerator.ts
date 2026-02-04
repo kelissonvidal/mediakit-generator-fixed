@@ -73,7 +73,7 @@ function generatePDFHTML(data: MediaKitData): string {
       
       .header-purple {
         background: #663ea2;
-        padding: 12mm 15mm;
+        padding: 8mm 15mm;
         text-align: center;
       }
       
@@ -122,10 +122,10 @@ function generatePDFHTML(data: MediaKitData): string {
       
       .impact-quote {
         background: #ede9fe;
-        padding: 4mm 15mm;
+        padding: 3mm 15mm;
         text-align: center;
         border-left: 4mm solid #663ea2;
-        margin: 6mm 0 5mm;
+        margin: 4mm 0 4mm;
       }
       
       .impact-text {
@@ -137,7 +137,7 @@ function generatePDFHTML(data: MediaKitData): string {
       }
       
       .content-section {
-        padding: 0 15mm 5mm;
+        padding: 0 15mm 3mm;
       }
       
       .section-title {
@@ -151,9 +151,9 @@ function generatePDFHTML(data: MediaKitData): string {
       
       .about-text {
         font-size: 9.5pt;
-        line-height: 1.6;
+        line-height: 1.5;
         color: #333;
-        margin-bottom: 5mm;
+        margin-bottom: 3mm;
         text-align: justify;
       }
       
@@ -180,7 +180,7 @@ function generatePDFHTML(data: MediaKitData): string {
       
       .stats-section {
         background: #f8f7ff;
-        padding: 5mm 15mm;
+        padding: 4mm 15mm;
         border-top: 3px solid #e8eaf6;
       }
       
@@ -189,7 +189,7 @@ function generatePDFHTML(data: MediaKitData): string {
         font-weight: 900;
         color: #663ea2;
         text-align: center;
-        margin-bottom: 4mm;
+        margin-bottom: 3mm;
         text-transform: uppercase;
       }
       
@@ -550,8 +550,6 @@ function generatePDFHTML(data: MediaKitData): string {
           </div>
         </div>
       </div>
-      
-      <div class="footer-text">@${data.contact.instagram}</div>
     </div>
     
     <!-- PAGE 2 -->
