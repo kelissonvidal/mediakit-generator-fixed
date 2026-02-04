@@ -22,9 +22,9 @@ export default function Home() {
     },
     portfolioQuote: 'Seus clientes já estão procurando por seus produtos no digital. A única dúvida é: eles estão encontrando a sua marca ou a da concorrência?',
     companies: [
-      { name: 'Festival Mineiridades', link: '' },
-      { name: 'Lumak Balanças', link: '' },
-      { name: 'Zé Delivery', link: '' },
+      { name: '', link: '', logo: null },
+      { name: '', link: '', logo: null },
+      { name: '', link: '', logo: null },
     ],
     storiesLink: 'https://instagram.com/julianaoliveirasol',
     packagesQuote: 'Marketing sem estratégia é desperdício. Meu trabalho é transformar seu investimento em resultado real.',
