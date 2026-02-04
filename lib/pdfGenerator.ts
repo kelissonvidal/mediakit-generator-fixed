@@ -122,10 +122,10 @@ function generatePDFHTML(data: MediaKitData): string {
       
       .impact-quote {
         background: #ede9fe;
-        padding: 6mm 15mm;
+        padding: 4mm 15mm;
         text-align: center;
         border-left: 4mm solid #663ea2;
-        margin: 10mm 0 8mm;
+        margin: 6mm 0 5mm;
       }
       
       .impact-text {
@@ -137,7 +137,7 @@ function generatePDFHTML(data: MediaKitData): string {
       }
       
       .content-section {
-        padding: 0 15mm 8mm;
+        padding: 0 15mm 5mm;
       }
       
       .section-title {
@@ -151,17 +151,17 @@ function generatePDFHTML(data: MediaKitData): string {
       
       .about-text {
         font-size: 9.5pt;
-        line-height: 1.7;
+        line-height: 1.6;
         color: #333;
-        margin-bottom: 8mm;
+        margin-bottom: 5mm;
         text-align: justify;
       }
       
       .info-box {
         background: #e8eaf6;
-        padding: 4mm 6mm;
+        padding: 3mm 5mm;
         border-radius: 8px;
-        margin-bottom: 3mm;
+        margin-bottom: 2mm;
         border-left: 4px solid #663ea2;
       }
       
@@ -180,7 +180,7 @@ function generatePDFHTML(data: MediaKitData): string {
       
       .stats-section {
         background: #f8f7ff;
-        padding: 8mm 15mm;
+        padding: 5mm 15mm;
         border-top: 3px solid #e8eaf6;
       }
       
@@ -189,7 +189,7 @@ function generatePDFHTML(data: MediaKitData): string {
         font-weight: 900;
         color: #663ea2;
         text-align: center;
-        margin-bottom: 6mm;
+        margin-bottom: 4mm;
         text-transform: uppercase;
       }
       
@@ -201,7 +201,7 @@ function generatePDFHTML(data: MediaKitData): string {
       
       .stat-card {
         background: white;
-        padding: 5mm;
+        padding: 3mm;
         border-radius: 10px;
         text-align: center;
         box-shadow: 0 3px 12px rgba(0,0,0,0.1);
