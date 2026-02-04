@@ -109,7 +109,7 @@ export default function Portfolio({ data, setData }: PortfolioProps) {
                 Logo da Empresa (formato círculo)
               </label>
               <input
-                ref={(el) => fileInputRefs.current[index] = el}
+                ref={(el) => { fileInputRefs.current[index] = el }}
                 type="file"
                 accept="image/*"
                 onChange={(e) => handleLogoUpload(index, e)}
