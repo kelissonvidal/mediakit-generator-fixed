@@ -533,19 +533,19 @@ function generatePDFHTML(data: MediaKitData): string {
         <div class="stats-title">Estatísticas de Engajamento</div>
         <div class="stats-grid">
           <div class="stat-card">
-            <div class="stat-value">${data.stats.instagram}</div>
+            <div class="stat-value">${data.stats.instagram || '0'}</div>
             <div class="stat-label">Seguidores no Instagram</div>
           </div>
           <div class="stat-card">
-            <div class="stat-value">${data.stats.tiktok}</div>
+            <div class="stat-value">${data.stats.tiktok || '0'}</div>
             <div class="stat-label">Seguidores no TikTok</div>
           </div>
           <div class="stat-card">
-            <div class="stat-value">${data.stats.reach}</div>
+            <div class="stat-value">${data.stats.reach || '0'}</div>
             <div class="stat-label">Alcance Mensal</div>
           </div>
           <div class="stat-card">
-            <div class="stat-value">${data.stats.posts}</div>
+            <div class="stat-value">${data.stats.posts || '0'}</div>
             <div class="stat-label">Publicações Criadas</div>
           </div>
         </div>
@@ -561,24 +561,24 @@ function generatePDFHTML(data: MediaKitData): string {
       </div>
       
       <div class="portfolio-section">
-        <div class="portfolio-title">Clique nas empresas abaixo</div>
-        <div class="portfolio-subtitle">para ver os Reels no Instagram</div>
+        <div class="portfolio-title">Campanhas Recentes</div>
+        <div class="portfolio-subtitle">Visite @${data.contact.instagram} e assista os Destaques *Trabalhos</div>
         
         <div class="companies-grid">
-          ${data.companies.slice(0, 9).map(company => `
+          ${data.companies.slice(0, 6).map(company => `
             <div class="company-card">
               ${company.logo ? `
                 <img src="${company.logo}" class="company-logo" crossorigin="anonymous">
               ` : ''}
               <div class="company-name">${company.name}</div>
-              ${company.link ? `<div class="company-link">Ver Reel</div>` : ''}
+              ${company.link ? `<div class="company-link">${company.link}</div>` : ''}
             </div>
           `).join('')}
         </div>
         
         <div class="stories-container">
-          <div class="stories-title">Vídeos Storys no Instagram</div>
-          <div class="stories-btn">ASSISTIR AGORA</div>
+          <div class="stories-title">Vídeos Stories no Instagram</div>
+          <div class="stories-btn">Visite @${data.contact.instagram}</div>
         </div>
       </div>
       

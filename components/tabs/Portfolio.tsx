@@ -146,10 +146,10 @@ export default function Portfolio({ data, setData }: PortfolioProps) {
               className="w-full px-4 py-3 mb-3 border-2 border-gray-200 rounded-lg focus:border-primary outline-none transition-all"
             />
             <input
-              type="url"
+              type="text"
               value={company.link}
               onChange={(e) => updateCompany(index, 'link', e.target.value)}
-              placeholder="Link do Instagram Reel"
+              placeholder="@ da empresa (ex: @empresa)"
               className="w-full px-4 py-3 border-2 border-gray-200 rounded-lg focus:border-primary outline-none transition-all"
             />
           </div>
