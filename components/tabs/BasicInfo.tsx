@@ -95,7 +95,7 @@ export default function BasicInfo({ data, setData }: BasicInfoProps) {
             hover:shadow-lg transform hover:scale-[1.02] active:scale-[0.98]
           `}
         >
-          {photoPreview ? '✅ Foto Carregada - Trocar' : '📸 Escolher Foto'}
+          {photoPreview ? '✅ Foto Carregada - Trocar' : '📸 Escolher Foto (800x600px recomendado)'}
         </button>
         {photoPreview && (
           <img

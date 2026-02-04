@@ -391,7 +391,7 @@ function generatePDFHTML(data: MediaKitData): string {
       
       .services-section {
         background: #ede9fe;
-        padding: 8mm 15mm;
+        padding: 6mm 15mm;
       }
       
       .services-title {
@@ -463,13 +463,6 @@ function generatePDFHTML(data: MediaKitData): string {
         margin-bottom: 3mm;
       }
       
-      .whatsapp-container {
-        background: #d1fae5;
-        padding: 6mm 10mm;
-        border-radius: 15px;
-        margin-top: 6mm;
-      }
-      
       .whatsapp-btn {
         display: inline-block;
         background: #25d366;
@@ -479,6 +472,7 @@ function generatePDFHTML(data: MediaKitData): string {
         font-size: 11pt;
         font-weight: 900;
         text-transform: uppercase;
+        margin-top: 6mm;
       }
       
       .final-quote {
@@ -634,9 +628,7 @@ function generatePDFHTML(data: MediaKitData): string {
         <div class="contact-info">📱 ${data.contact.phone}</div>
         <div class="contact-info">📸 @${data.contact.instagram}</div>
         
-        <div class="whatsapp-container">
-          <div class="whatsapp-btn">💬 Fale comigo no WhatsApp</div>
-        </div>
+        <a href="${data.contact.whatsapp}" class="whatsapp-btn">💬 Fale comigo no WhatsApp</a>
         
         <div class="final-quote">"${data.finalQuote}"</div>
       </div>

@@ -12,6 +12,10 @@ export default function Portfolio({ data, setData }: PortfolioProps) {
   const fileInputRefs = useRef<{[key: number]: HTMLInputElement | null}>({})
 
   const addCompany = () => {
+    if (data.companies.length >= 6) {
+      alert('Máximo de 6 empresas permitido para manter o layout')
+      return
+    }
     setData({
       ...data,
       companies: [...data.companies, { name: '', link: '', logo: null }],
